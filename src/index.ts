@@ -1,19 +1,6 @@
-import {
-  Client,
-  Events,
-  GatewayIntentBits,
-  SlashCommandBuilder,
-  Partials,
-  REST,
-  Routes,
-  Collection,
-} from "discord.js";
-import type { SlashCommand } from "./types";
-import { join } from "path";
-import { readdirSync } from "fs";
+import { Client, Events, GatewayIntentBits, Partials } from "discord.js";
 import dotenv from "dotenv";
 dotenv.config();
-import testCommand from "./slashCommands/ping";
 
 const token = process.env.DISCORD_TOKEN; // Token from Railway Env Variable.
 const client_id = process.env.CLIENT_ID;
